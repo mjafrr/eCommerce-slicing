@@ -142,10 +142,10 @@
     </nav>
 
     <aside
-      class="w-full h-screen bg-white bg-opacity-90 z-50 fixed md:hidden transition-all duration-200 ease-in-out translate-x-full"
+      class="w-full h-screen bg-slate-500 bg-opacity-10 z-50 fixed md:hidden transition-all duration-200 ease-in-out translate-x-full"
     >
       <div
-        class="content backdrop-blur-sm h-full flex items-center justify-center relative"
+        class="content backdrop-blur-0 h-full flex items-start justify-start relative"
       >
         <button onclick="closeNavbar()" class="absolute right-4 top-4">
           <svg
@@ -159,7 +159,7 @@
           </svg>
         </button>
 
-        <ul class="flex flex-col text-center w-full">
+        <ul class="flex flex-col text-center w-1/2 h-full bg-white">
           <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
             <a class="text-xs text-[#018491] font-semibold" href="index.html"
               >Home</a
@@ -222,6 +222,7 @@
       <!-- FILTERS BUTTON -->
       <div class="w-full h-fit py-4 px-2 grid grid-cols-2 gap-2">
         <button
+          onclick="openSidebar()"
           id="filterButton"
           class="bg-white rounded-md border border-slate-400 text-black py-2 pl-2 flex flex-row items-center md:hidden"
         >
@@ -244,13 +245,258 @@
         </button>
       </div>
 
-      <!-- Sidebar -->
+      <section class="my-6">
+        <div class="container px-6 w-full relative">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 g py-4 mt-6 gap-4"
+          >
+            <!-- CARD 1 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-1.JPG"
+                  alt="Product 1"
+                  class="w-fit h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Flock Slim Fit 050324
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.191.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-2.JPG"
+                  alt="Product 2"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Faded Logo 221123
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.159.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-3.JPG"
+                  alt="Product 3"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Flock Slim Fit Fit
+                    060324
+                  </p>
 
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.191.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-4.JPG"
+                  alt="Product 4"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">3Second</h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    3Second Men's T-Shirt Short Sleeve Script Logo 100124
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.139.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-5.JPG"
+                  alt="Product 6"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Stone Script Regular
+                    Fit 040324
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.183.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 6 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-1.JPG"
+                  alt="Product 1"
+                  class="w-fit h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Flock Slim Fit 050324
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.191.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 7 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-2.JPG"
+                  alt="Product 2"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Faded Logo 221123
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.159.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 8 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-3.JPG"
+                  alt="Product 3"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Flock Slim Fit Fit
+                    060324
+                  </p>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.191.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 9 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-4.JPG"
+                  alt="Product 4"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">3Second</h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    3Second Men's T-Shirt Short Sleeve Script Logo 100124
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.139.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 10 -->
+            <div class="px-3">
+              <div
+                class="w-fit h-fit rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              >
+                <img
+                  src="./src/img/kaos-5.JPG"
+                  alt="Product 6"
+                  class="w-full h-full"
+                />
+                <div class="p-4">
+                  <h3 class="font-light text-gray-400 mt-2 text-sm">
+                    Greenlight
+                  </h3>
+                  <p class="text-black mt-1 font-medium line-clamp-2">
+                    Greenlight Men's T-Shirt Short Sleeve Stone Script Regular
+                    Fit 040324
+                  </p>
+                  <div class="flex flex-row items-center gap-2">
+                    <p class="text-red-600 mt-1 text-sm">Rp.183.200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sidebar -->
       <div
         id="sidebar"
-        class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300"
+        class="sidebar top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 fixed overflow-y-auto"
       >
         <div class="p-4">
+          <div
+            onclick="closeSidebar()"
+            class="cursor-pointer bg-red-600 py-2 px-2 w-fit rounded-md"
+          >
+            <p class="text-base text-white">close</p>
+          </div>
           <h3 class="text-lg font-bold mb-4">Kategori</h3>
           <ul>
             <li class="mb-2 cursor-pointer">Men</li>
@@ -301,13 +547,451 @@
               />
               Famo
             </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second.jpg"
+                alt="3Second"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/greenlight.jpg"
+                alt="Greenlight"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Greenlight
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/hanna.jpg"
+                alt="Hanna"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Hanna
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second_kids.jpg"
+                alt="3Second Kids"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second Kids
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/famo.jpg"
+                alt="Famo"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Famo
+            </li>
             <!-- Add more brands similarly -->
+          </ul>
+          <h2 class="text-lg font-semibold mb-2">UKURAN</h2>
+          <!-- Checklist Options -->
+          <ul class="space-y-2">
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>No Size</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>L</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>M</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>S</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>XL</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>FR</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>XXL</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>6</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>8</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>10</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>12</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>28</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>29</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>30</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>31</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>32</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SIDEBAR MEDIUM -->
+      <div
+        id="sidebar"
+        class="hidden sidebar top-0 left-0 w-64 h-full bg-white shadow-lg md:flex"
+      >
+        <div class="p-4">
+          <div class="cursor-pointer bg-red-600 py-2 px-2 w-fit rounded-md">
+            <p class="text-base text-white">close</p>
+          </div>
+          <h3 class="text-lg font-bold mb-4">Kategori</h3>
+          <ul>
+            <li class="mb-2 cursor-pointer">Men</li>
+            <li class="mb-2 cursor-pointer">Ladies</li>
+            <li class="mb-2 cursor-pointer">Kids</li>
+            <li class="mb-2 cursor-pointer">Collab</li>
+          </ul>
+
+          <h3 class="text-lg font-bold mt-6 mb-4">Brand Produk</h3>
+          <ul>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second.jpg"
+                alt="3Second"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/greenlight.jpg"
+                alt="Greenlight"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Greenlight
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/hanna.jpg"
+                alt="Hanna"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Hanna
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second_kids.jpg"
+                alt="3Second Kids"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second Kids
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/famo.jpg"
+                alt="Famo"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Famo
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second.jpg"
+                alt="3Second"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/greenlight.jpg"
+                alt="Greenlight"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Greenlight
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/hanna.jpg"
+                alt="Hanna"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Hanna
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/3second_kids.jpg"
+                alt="3Second Kids"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              3Second Kids
+            </li>
+            <li class="flex items-center mb-2 cursor-pointer">
+              <img
+                src="path/to/famo.jpg"
+                alt="Famo"
+                class="w-6 h-6 rounded-full mr-2"
+              />
+              Famo
+            </li>
+            <!-- Add more brands similarly -->
+          </ul>
+          <h2 class="text-lg font-semibold mb-2">UKURAN</h2>
+          <!-- Checklist Options -->
+          <ul class="space-y-2">
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>No Size</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>L</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>M</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>S</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>XL</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>FR</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>XXL</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>6</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>8</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>10</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>12</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>28</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>29</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>30</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>31</span>
+              </label>
+            </li>
+            <li>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-gray-600"
+                />
+                <span>32</span>
+              </label>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- Overlay -->
-    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden"></div>
 
     <script>
       function tombolcari() {
@@ -321,6 +1005,31 @@
           input.classList.add("hidden");
           icon.classList.remove("hidden");
         }
+      }
+    </script>
+    <script>
+      const navbar = document.querySelector("aside");
+
+      function openNavbar() {
+        navbar.classList.add("translate-x-0");
+        navbar.classList.remove("translate-x-full");
+      }
+      function closeNavbar() {
+        navbar.classList.add("-translate-x-full");
+        navbar.classList.remove("translate-x-0");
+      }
+    </script>
+
+    <script>
+      const bar = document.querySelector("sidebar");
+
+      function openSidebar() {
+        sidebar.classList.add("translate-x-0");
+        sidebar.classList.remove("translate-x-full");
+      }
+      function closeSidebar() {
+        sidebar.classList.add("-translate-x-full");
+        sidebar.classList.remove("translate-x-0");
       }
     </script>
   </body>
