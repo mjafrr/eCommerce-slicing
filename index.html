@@ -142,71 +142,100 @@
     </nav>
 
     <aside
-      class="w-full h-screen bg-slate-500 bg-opacity-10 z-50 fixed md:hidden transition-all duration-200 ease-in-out translate-x-full"
+      class="sidebar top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 fixed overflow-y-auto md:hidden"
     >
-      <div
-        class="content backdrop-blur-0 h-full flex items-start justify-start relative"
-      >
-        <button onclick="closeNavbar()" class="absolute right-4 top-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="fill-[#018491] w-10 h-10"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
-            ></path>
-          </svg>
-        </button>
-
-        <ul class="flex flex-col text-center w-1/2 h-full bg-white">
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="index.html"
-              >Home</a
-            >
+      <div class="p-4">
+        <div
+          onclick="closeNavbar()"
+          class="cursor-pointer bg-red-600 py-2 px-2 w-fit rounded-md"
+        >
+          <p class="text-base text-white">close</p>
+        </div>
+        <h3 class="text-lg font-bold mb-4 text-center">BRAND</h3>
+        <ul>
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/3second.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-red-600"
+            />
+            3Second
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="about.html"
-              >About Us</a
-            >
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/greenlight.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#5e8b5c]"
+            />
+            Greenlight
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="partner.html"
-              >Patner</a
-            >
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/hanna.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#5f4766]"
+            />
+            Hanna
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="service.html"
-              >Service</a
-            >
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/3second_kids.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-red-500"
+            />
+            3Second Kids
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="gallery.html"
-              >Galeri</a
-            >
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/famo.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#2b1d41]"
+            />
+            Famo
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="info.html"
-              >Info</a
-            >
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/3second.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#1d3a1b]"
+            />
+            3Second
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="">Karir</a>
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/greenlight.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#27725b]"
+            />
+            Greenlight
           </li>
-          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
-            <a class="text-xs text-[#018491] font-semibold" href="">Kontak</a>
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/hanna.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-yellow-300"
+            />
+            Hanna
           </li>
-          <li>
-            <button
-              onclick="openLogin()"
-              class="md:flex bg-[#018491] text-[8px] md:text-xs lg:text-lg text-white font-semibold py-1 px-2 w-fit h-fit rounded-full my-auto"
-            >
-              Masuk/Daftar
-            </button>
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/3second_kids.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-slate-300"
+            />
+            3Second Kids
           </li>
+          <li class="flex items-center mb-2 cursor-pointer">
+            <img
+              src="path/to/famo.jpg"
+              alt=""
+              class="w-6 h-6 rounded-full mr-2 bg-[#2f2555]"
+            />
+            Famo
+          </li>
+          <!-- Add more brands similarly -->
         </ul>
       </div>
-          
     </aside>
 
     <!-- HERO SLIDER -->
